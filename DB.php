@@ -8,10 +8,10 @@ class DB
 
     function __construct()
     {
-        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "localhost");
-        $databaseName = env("MYSQL_INSTANCE_NAME", "homestead");
-        $username = env("MYSQL_USERNAME", "homestead");
-        $password = env("MYSQL_PASSWORD", "secret");
+        $serverName = env("MYSQL_PORT_3306_TCP_ADDR", "tcp://10.10.26.58:3306");
+        $databaseName = env("MYSQL_INSTANCE_NAME", "hTFM9BXZEsp0DKuI");
+        $username = env("MYSQL_USERNAME", "ud7p0Qjinz1fwkXF");
+        $password = env("MYSQL_PASSWORD", "p7fXZHWoK5hJ0vnjg");
 
         try {
             $this->pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
